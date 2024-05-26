@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  @Input() isLoggedIn: boolean = false;
+  @Output() LogoutEvent:EventEmitter<void> = new EventEmitter<void>();
 
+  // Logout action
+  logout(){
+    this.LogoutEvent.emit();
+  }
 }

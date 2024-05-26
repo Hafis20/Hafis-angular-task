@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
     private fb: FormBuilder,
     private service: AuthService,
     private router: Router,
-    private toastr:SharedToastrService
+    private toastr:SharedToastrService,
   ) { }
 
   ngOnInit(): void {

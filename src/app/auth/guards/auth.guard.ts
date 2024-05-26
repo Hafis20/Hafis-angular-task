@@ -7,13 +7,13 @@ export const authGuard: CanActivateFn = (route, state) => {
   const router = inject(Router);
 
   // If no tokens available 
-  if(!takeToken.adminTokenFromLocalStorage || !takeToken.userTokenFromLocalStorage){
+  if (!takeToken.adminTokenFromLocalStorage && !takeToken.userTokenFromLocalStorage) {
     return true;
-  }else{
+  } else {
     // If admin token available
-    if(takeToken.adminTokenFromLocalStorage){
+    if (takeToken.adminTokenFromLocalStorage) {
       router.navigate(['/admin/dashboard']);
-    }else{
+    } else {
       // If user token available
       router.navigate(['/user/dashboard']);
     }

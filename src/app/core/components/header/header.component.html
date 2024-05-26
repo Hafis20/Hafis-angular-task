@@ -1,6 +1,8 @@
 <div class="shadow-md">
     <mat-toolbar class="flex justify-between background" >
         <span>Solutions</span>
-        <mat-icon>menu</mat-icon>
+        <button *ngIf="isLoggedIn" mat-raised-button (click)="logout()">Logout
+            <mat-icon >logout</mat-icon>
+        </button>
     </mat-toolbar>
 </div>

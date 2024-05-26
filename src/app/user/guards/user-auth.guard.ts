@@ -5,6 +5,7 @@ import { LocalstorageService } from 'src/app/shared/services/localstorage.servic
 export const userAuthGuard: CanActivateFn = (route, state) => {
   const takeToken = inject(LocalstorageService);
   const router = inject(Router);
+  
   if (takeToken.userTokenFromLocalStorage) {
     return true;
   } else {
