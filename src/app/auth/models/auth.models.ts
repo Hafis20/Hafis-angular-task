@@ -6,4 +6,5 @@ export interface LoginModel{
 export interface LoginResponseModel{
     message:string;
     role:string;
+    token:string;
 }

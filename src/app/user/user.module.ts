@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CoreModule } from '../core/core.module';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 
 
 @NgModule({
   declarations: [
     UserComponent,
-    DashboardComponent
+    UserDashboardComponent,
   ],
   imports: [
     CommonModule,
