@@ -1,0 +1,44 @@
+<div class="md:flex px-3 py-5 gap-3">
+    <!-- Image  -->
+    <div class="w-full h-96">
+        <div class="flex justify-center md:hidden">
+            <h1 style="margin: 0px;">LOGIN</h1>
+        </div>
+        <img class="object-contain w-full h-full" src="assets/imgs/login-img.jpg" alt="">
+    </div>
+    <!-- Form  -->
+    <div class=" w-full h-96 rounded">
+        <div class="flex justify-center">
+            <h1 class="hidden md:block" style="margin: 0px;">LOGIN</h1>
+        </div>
+        <form class="flex justify-center mt-5">
+            <div class="w-3/4">
+                <!-- Email Field  -->
+                <div>
+                    <mat-label>Email</mat-label>
+                    <div>
+                        <mat-form-field appearance="outline" class="w-full">
+                            <input matInput type="email">
+                            <mat-icon matSuffix class="text-emerald-500">email</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- Password Field  -->
+                <div>
+                    <mat-label>Password</mat-label>
+                    <div>
+                        <mat-form-field appearance="outline" class="w-full">
+                            <input matInput type="password">
+                            <mat-icon matSuffix class="text-emerald-500">password</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <!-- Submit button  -->
+                <div class="flex justify-end">
+                    <button mat-raised-button>Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
