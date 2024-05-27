@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RegisterComponent } from './components/register/register.component';
 
 
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -20,6 +21,6 @@ import { RegisterComponent } from './components/register/register.component';
     AuthRoutingModule,
     CoreModule,
     SharedModule
-  ]
+  ],
 })
 export class AuthModule { }

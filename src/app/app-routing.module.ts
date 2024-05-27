@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { adminAuthGuard } from './admin/guards/admin-auth.guard';
+import { UnauthPageComponent } from './shared/components/unauth-page/unauth-page.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'auth/login',
+    pathMatch:'full'
+  },
   // Auth module
   {
     path: 'auth',
@@ -19,6 +25,11 @@ const routes: Routes = [
   {
     path: 'user',
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule)
+  },
+
+  {
+    path: 'unauthorized',
+    component: UnauthPageComponent
   }
 ];
 
