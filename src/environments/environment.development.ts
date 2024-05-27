@@ -1,4 +1,3 @@
 export const environment = {
-    userAPI:'http://localhost:7000/api/user',
-    adminAPI:'',
+    api:'http://localhost:7000/api',
 };

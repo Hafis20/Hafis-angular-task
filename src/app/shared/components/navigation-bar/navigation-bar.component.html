@@ -1,0 +1,11 @@
+<div>
+  <mat-card>
+    <div class="bg-gray-200">
+      <ul class="flex gap-4 list-none p-2">
+        <li *ngFor="let el of navbarContent" class="p-2 rounded" routerLinkActive="active-link">
+          <a [routerLink]="el.link">{{el.title}}</a>
+        </li>
+      </ul>
+    </div>
+  </mat-card>
+</div>

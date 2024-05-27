@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { adminAuthGuard } from './guards/admin-auth.guard';
+import { ListUsersComponent } from './components/list-users/list-users.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component:AdminDashboardComponent
+      },
+      {
+        path:'list-users',
+        component:ListUsersComponent
       }
     ]
   }

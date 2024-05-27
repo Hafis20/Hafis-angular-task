@@ -12,10 +12,10 @@ export class AuthService {
   constructor(private http:HttpClient) { }
 
   login(loginData:LoginModel):Observable<LoginResponseModel>{
-    return this.http.post<LoginResponseModel>(`${environment.userAPI}/login`,loginData);
+    return this.http.post<LoginResponseModel>(`${environment.api}/login`,loginData);
   }
 
   register(registeData:RegisterModel):Observable<HttpSuccessResponse>{
-    return this.http.post<HttpSuccessResponse>(`${environment.userAPI}/register`,registeData);
+    return this.http.post<HttpSuccessResponse>(`${environment.api}/register`,registeData);
   }
 }

@@ -1,22 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material.module';
-import { CoreModule } from '../core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NavigationBarComponent
+  ],
   imports: [
     CommonModule,
     MaterialModule,
+    RouterModule
   ],
   exports:[
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
+    NavigationBarComponent
   ]
 })
 export class SharedModule { }
