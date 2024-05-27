@@ -1,2 +1,13 @@
 <app-header></app-header>
-<router-outlet></router-outlet>
+<div class="md:flex px-3 py-5 gap-3">
+    <!-- Image  -->
+    <div class="w-full h-96">
+        <div class="flex justify-center md:hidden">
+            <h1 style="margin: 0px;">LOGIN/REGISTER</h1>
+        </div>
+        <img class="object-contain w-full h-full" src="assets/imgs/login-img.jpg" alt="">
+    </div>
+    <div class="w-full">
+        <router-outlet></router-outlet>
+    </div>
+</div>
