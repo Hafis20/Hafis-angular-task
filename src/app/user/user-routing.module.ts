@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserComponent } from './user.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 import { userAuthGuard } from './guards/user-auth.guard';
+import { ChatComponent } from './components/chat/chat.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
       {
         path:'dashboard',
         component:UserDashboardComponent
+      },
+      {
+        path:'chat',
+        component:ChatComponent
       }
     ]
   }

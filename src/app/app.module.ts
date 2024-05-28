@@ -9,6 +9,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { SharedModule } from './shared/shared.module';
 import { AuthInterceptorInterceptor } from './interceptors/auth-interceptor.interceptor';
 import { ErrorHandlingInterceptor } from './interceptors/error-handling.interceptor';
+import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
+
+const config: SocketIoConfig = { url: 'http://localhost:7000', options: {} };
 
 
 @NgModule({
@@ -20,6 +23,7 @@ import { ErrorHandlingInterceptor } from './interceptors/error-handling.intercep
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    SocketIoModule.forRoot(config),
     SharedModule,
     ToastrModule.forRoot({
       timeOut: 1000,

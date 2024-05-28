@@ -6,13 +6,15 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { RouterModule } from '@angular/router';
 import { UnauthPageComponent } from './components/unauth-page/unauth-page.component';
 import { CoreModule } from '../core/core.module';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
 
 
 
 @NgModule({
   declarations: [
     NavigationBarComponent,
-    UnauthPageComponent
+    UnauthPageComponent,
+    ErrorPageComponent
   ],
   imports: [
     CommonModule,

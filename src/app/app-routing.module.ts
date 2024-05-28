@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { adminAuthGuard } from './admin/guards/admin-auth.guard';
 import { UnauthPageComponent } from './shared/components/unauth-page/unauth-page.component';
+import { ErrorPageComponent } from './shared/components/error-page/error-page.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,11 @@ const routes: Routes = [
   {
     path: 'unauthorized',
     component: UnauthPageComponent
+  },
+
+  {
+    path:'**',
+    component:ErrorPageComponent
   }
 ];
 

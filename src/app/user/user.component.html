@@ -1,2 +1,5 @@
 <app-header [isLoggedIn]="true" (LogoutEvent)="logout()"></app-header>
-<router-outlet></router-outlet>
+<div class="p-5">
+    <navigation-bar [navbarContent]="navMenu"></navigation-bar>
+    <router-outlet></router-outlet>
+</div>

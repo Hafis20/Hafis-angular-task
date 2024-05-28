@@ -20,5 +20,5 @@ export class ListUsersComponent implements OnInit{
     })
   }
 
-  displayedColumns = ['_id','name','email','role','chat'];
+  displayedColumns = ['_id','name','email','role'];
 }
